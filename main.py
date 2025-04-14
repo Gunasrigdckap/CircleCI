@@ -1,4 +1,6 @@
-from main import say_hello
+def say_hello(name):
+    return f"Hello, {name}"
 
-def test_say_hello():
-    say_hello("Gunasri")
+# Directly call the function here to print
+if __name__ == "__main__":
+    print(say_hello("Gunasri"))
