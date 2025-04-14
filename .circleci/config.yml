@@ -7,8 +7,15 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run Python Script
+          name: Install dependencies
+          command: |
+            pip install -r requirements.txt
+      - run:
+          name: Run main.py
           command: python main.py
+      - run:
+          name: Run unit tests
+          command: python tests.py
 
 workflows:
   build_now:
