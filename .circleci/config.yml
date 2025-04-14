@@ -7,10 +7,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install dependencies
-          command: |
-            pip install -r requirements.txt
-      - run:
           name: Run main.py
           command: python main.py
       - run:
