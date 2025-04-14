@@ -9,8 +9,12 @@ jobs:
       - run:
           name: Run main.py
           command: python main.py
+      - run:
+          name: Run tests
+          command: python tests.py
 
 workflows:
   build_now:
     jobs:
       - build
+
